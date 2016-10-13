@@ -38,11 +38,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .blue {
-	color: #06C;
+  color: #06C;
 }
 
 .green {
-	color: #090;
+  color: #090;
 }
 
 main {
@@ -91,7 +91,7 @@ figcaption,
 figure,
 footer,
 header,
-/*hgroup,*/
+hgroup,
 nav,
 section {
   display: block;
@@ -250,6 +250,7 @@ h4.widget-title {
   font-family: 'robotobold';
   text-transform: uppercase;
   margin-bottom: 40px;
+  float: left;
 }
 
 hr {
@@ -309,29 +310,6 @@ h3.profile-title {
   font-size: 18px;
   font-family: 'robotobold';
 }
-#total-location{
-  float: left;
-  margin-left: 50px;
-  margin-top: 20px;
-  height: 24px;
-}
-.location-icon{
-  display: inline-block;
-  width: 30px;
-  height: 30px;
- 
-  /*background: url(../img/location.png) 0 0 no-repeat;*/
-}
-#school{
-  display: inline-block;
-  color: #fff;
-  font-size: 18px;
-
-}
-.skills-content{
-  margin-top: 50px;
-}
-
 
 .main-navigation {
   margin: 30px 0;
@@ -380,7 +358,7 @@ h3.profile-title {
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  .responsive-header {
+  .responsive-header .main-navigation {
     margin-top: 10px;
     display: none;
   }
@@ -391,7 +369,7 @@ h3.profile-title {
   }
 }
 @media screen and (max-width: 992px) {
-  .responsive-header{
+  .responsive-header .profile-image {
     float: left;
     width: 100px;
     height: 100px;
@@ -400,7 +378,7 @@ h3.profile-title {
     overflow: hidden;
     margin-right: 30px;
   }
-  .responsive-header{
+  .responsive-header .profile-content {
     text-align: left;
     margin-top: 30px;
     overflow: hidden;
@@ -507,8 +485,9 @@ h3.profile-title {
   position: relative;
 }
 .project-item img {
-  width: 100%;
+ width: 100%;
   display: block;
+  margin-right: 10px;
 }
 .project-item:hover .project-hover {
   top: 0;
@@ -522,7 +501,7 @@ h3.profile-title {
   height: 100%;
   top: 40px;
   left: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, .9);
   opacity: 0;
   visibility: visible;
   -webkit-transition: all 200ms linear;
@@ -550,6 +529,36 @@ h3.profile-title {
   font-size: 13px;
   line-height: 20px;
 }
+#projects .more{
+  width:80px;
+  height:20px;
+  margin:0 auto;
+
+}
+#projects .more a{
+  display: block;
+  width:80px;
+  height:20px;
+  /*background: #f7e1b5;*/
+  color: #000;
+  line-height: 20px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-align: center;
+  border-radius: 5px;
+}
+#projects .more a:hover{
+  background: #000;
+  color: #ffffff;
+  border:1px solid #555555;
+
+}
+
+
+
 
 /*------ contact ------ */
 .contact-form {
@@ -573,6 +582,47 @@ h3.profile-title {
   text-transform: uppercase;
   border: 0;
 }
+/******* 新加胡样式开始 *********/
+#projects .blog-cate{
+  float:right;
+  margin-top: 10px;
+
+}
+#projects .blog-cate li{
+  float: left;
+  font-size: 16px;
+  font-family: 'robotobold';
+
+}
+#projects .blog-cate li a{
+  color: #000;
+  border-radius: 5px;
+  padding: 8px 15px;
+  text-decoration:none;
+  font-size: 16px;
+  margin-right: 20px;
+  -webkit-transition:all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+#projects .blog-cate li a.active{
+  color: #fff;
+  background: #495461;
+}
+#projects .blog-cate li a:hover{
+  color: #fff;
+  background: #495461;
+}
+.blog-desc .blog-title{
+  float: left;
+}
+.blog-desc .blog-clicked{
+  float: right;
+}
+
+/******* 新加胡样式结束 *********/
 
 /*---------------------------------------------------------
  5. Footer
@@ -587,3 +637,4 @@ h3.profile-title {
 /*#footer p.copyright-text a:hover {*/
   /*color: #6cc0f7;*/
 /*}*/
+
